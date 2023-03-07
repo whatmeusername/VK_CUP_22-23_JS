@@ -1,0 +1,89 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+#app {
+	height: 100%;
+}
+
+
+
+.checkbox__wrapper{
+	pointer-events: none;
+	.custom__checkbox {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	
+		& + label{
+			cursor: pointer;
+			align-items: center;
+			user-select: none;
+			pointer-events: all;
+		}
+	
+		& + label::before {
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border: var(--checkbox-custom-border);
+			background-color:  var(--checkbox-custom-bg);
+			border-radius: 4px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 50% 50%;
+		}
+	
+		&:checked + label::before {
+			border-color: rgba(0, 16, 61, 0.12);
+			background-color: #005FF9;
+			background-image: url("data:image/svg+xml;utf8, <svg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M7.7 0.3C7.3 -0.1 6.7 -0.1 6.3 0.3L3 3.6L1.7 2.3C1.3 1.9 0.7 1.9 0.3 2.3C-0.1 2.7 -0.1 3.3 0.3 3.7L2.3 5.7C2.5 5.9 2.7 6 3 6C3.3 6 3.5 5.9 3.7 5.7L7.7 1.7C8.1 1.3 8.1 0.7 7.7 0.3Z' fill='white'/></svg>");
+		  }
+	
+	}
+}
+
+
+.custom__radio{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: var(--radio-custom-not-checked-border);
+    cursor: pointer;
+    &:checked{
+        background: var(--radio-custom-checked-bg);
+        border: var(--radio-custom-checked-border);
+        box-shadow: var(--radio-custom-checked-box-shadow);
+        position: relative;
+        &::before{
+            content:"";
+            position: absolute;
+            left: calc(50% - 3px);
+            top: calc(50% - 3px); 
+            width: 6px;
+            height: 6px;
+            background-color: var(--radio-custom-checked-dot-bg);
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+
+
+
+
+.app{
+
+
+
+  &.custom_theme_light{
+  
+    background-color: #F6F7F8;
+    --header-hover-primary: transparent;
+  }
+
+  &.custom_theme_dark{
+
+    background-color:  #19191A;
+    --site-header-icon-filter: invert(100%) sepia(100%) brightness(2);
+    --site-header: #232324;
+    --header-text: #FFFFFF;
+    --header-hover-primary: #FFFFFF14;
+
+    --setting-modal-bg: #303030;
+    --setting-modal-shadow: 0 4px 32px 0 #00103d52;
+    --settings-modal-rb-bg: rgba(0, 0, 0, 0.4);
+    --setting-sidebar-selected: #FFFFFF14;
+    --setting-sidebar-hover: #FFFFFF0A;
+
+
+    
+    --sidebar-text-color: #E7E8EA;
+    --sidebar-selected-text-color: #FFFFFF;
+    --sidebar-text-secondary-color: #8C8E94;
+    --sidebar-item-selected: #FFFFFF14;
+    --sidebar-hover-bg: #FFFFFF0A;
+
+    --text-color-primary: #E7E8EA;
+    --text-color-secondary: #8C8E94;
+    --text-color-link: #589BFF;
+
+    --read-icon-unreaded-bg: #3C82FD;
+    --read-icon-readed-bg: #9C9DA2;
+
+    --border-icon-primary: #00000066;
+
+    --primary-hover-bg: #FFFFFF0A;
+    --primary-active: #FFFFFF14;
+    --separator-color: #00000066;
+
+
+    --icon-filter-side: invert(95%) sepia(9%) saturate(38%) hue-rotate(182deg) brightness(100%) contrast(120%);
+
+    --icon-filter-primary: invert(95%) sepia(9%) saturate(38%) hue-rotate(182deg) brightness(100%) contrast(120%);
+    --icon-filter-secondary: invert(57%) sepia(4%) saturate(396%) hue-rotate(187deg) brightness(97%) contrast(96%);
+
+    --letter-bottom-color: #00000066;
+    --letter-hover-bg: #2C2C2D;
+    --letter-active-bg: #353536;
+
+    
+    --letter-list-background: #242424;
+    --letter-list--scrollbar-bg: #ffffff3d;
+
+    --letter-attachment-active-background: #FFFFFF14;
+    --letter-attachment-hover-background: #ffffff0b;
+    --dropdown-box-shadow: 0 4px 32px 0 #00103d29;
+    --dropdown-bg: #303030;
+    --letter-attachment-dropdown-box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.72);
+    --letter-download-bg: linear-gradient(0deg, rgba(44, 44, 45, 0.9) 45.32%, rgba(44, 44, 45, 0) 104.46%);
+
+    --checkbox-custom-bg: #1F1F1F;
+    --checkbox-custom-border: 1px solid rgba(255, 255, 255, 0.16);
+
+    --radio-custom-not-checked-border: 1px solid rgb(156, 157, 162);
+    --radio-custom-checked-bg: #3c82fd;
+    --radio-custom-checked-border: 1px solid #3c82fd;
+    --radio-custom-checked-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.04);
+    --radio-custom-checked-dot-bg: #1f1f1f;
+
+
+    --modal__dimmer__bg: rgb(20, 20, 20, 0.6);
+
+    --write-letter-control-hover: rgb(77,77,77, 0.5);
+    --receiver__card__bg: rgb(90, 90, 90);
+    --wl__attachment__hover: linear-gradient(0deg, rgba(77, 77, 77, 0.95) 56.81%, rgba(90, 90, 90, 0.1) 104.46%);
+    --wl__attachment__bg: rgba(120, 120, 120, 0.5);
+    --wl__dnd__bg: rgb(36, 36, 36, 0.75);
+
+    --btn__bg__primary: rgb(77, 77, 77);
+    --btn__bg__accent: #2775FC;
+
+  }
+
+  &.custom_theme_anime{
+    background-size: cover !important;
+
+    --site-header-icon-filter: invert(100%) sepia(100%) brightness(2);
+    --site-header: #6B1344;
+    --header-text: #FFFFFF;
+    --header-hover-primary: rgba(255, 255, 255, 0.075);
+    
+    --sidebar-text-color: #E7E8EA;
+    --sidebar-selected-text-color: #FFFFFF;
+    --sidebar-text-secondary-color: #FFFFFF;
+    --sidebar-hover-bg: #ffffff20;
+    --sidebar-item-selected: #FFFFFF3D;
+
+
+    --icon-filter-side: invert(95%) sepia(9%) saturate(38%) hue-rotate(182deg) brightness(100%) contrast(120%);
+  }
+
+}

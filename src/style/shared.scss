@@ -1,0 +1,13 @@
+.author__icon__placeholder{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(220, 220 , 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .author__icon__placeholder__label{
+        font-weight: 700;
+        color: rgb(170, 170 , 170);
+    }
+}

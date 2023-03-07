@@ -1,0 +1,236 @@
+@keyframes fade_in{
+	0%{
+		margin-top: 24px;
+		opacity: 0.5;
+	}
+	100%{
+		margin-top: 12px;
+		opacity: 1;
+	}
+}
+
+
+.header {
+	width: 100vw;
+	height: 56px;
+	background-color: var(--site-header);
+	box-shadow: 0px 0px 16px rgba(2, 13, 41, 0.12);
+	display: flex;
+	align-items: center;
+	min-width: var(--min-screen-width-desktop);
+
+
+	.header__content__wrapper{
+
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 16px;
+		align-items: center;
+		width: 100%;
+		max-width: var(--max-screen-width);
+		margin: auto;
+
+		.previous__page__wrapper{
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: fit-content;
+			gap: 12px;
+			cursor: pointer;
+			text-decoration: none;
+			.previous__page__icon{
+				filter: var(--site-header-icon-filter);
+			}
+			.previous__page__label{
+				color: var(--header-text);
+			}
+		}
+	
+		.logo__wrapper{
+			align-items: center;
+			width: 96px;
+			height: 100%;
+			gap: 9px;
+			display: flex;
+			flex-direction: row;
+			.logo__icon{
+				width: 33px;
+				height: 33px;
+			}
+			.logo__label{
+				margin-top: -5.2px;
+				width: 55px;
+				height: 25px;
+				filter: var(--site-header-icon-filter);
+			}
+			@media (max-width: 768px){
+				.logo__label{
+					display: none;
+				}
+			}
+		}
+
+		.letter__filter{
+			display: inline;
+			gap: 4px;
+			position: relative;
+
+
+			.filter__button{
+				gap: 4px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+				padding: 8px 10px;
+				border-radius: 8px;
+
+				.filter__button__label{
+					color: var(--header-text);
+				}
+				.filter__button__icon{
+					filter: var(--site-header-icon-filter);
+				}
+				.filter__button__icon__wrapper{
+					width: 20px;
+					height: 20px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				&:hover{
+					background: var(--header-hover-primary);
+				}
+
+			}
+			.filter__dropdown__wrapper{
+				position: absolute;
+				z-index: 20;
+				background-color: var(--dropdown-bg);
+				box-shadow: var(--dropdown-box-shadow);
+				width: 200px;
+				right: 0;
+				border-radius: 12px;
+				width: 240px;
+				margin-top: 12px;
+				animation: fade_in 0.1s ease;
+		
+				.filter__dropdown__content{
+					padding: 8px 0;
+					display: flex;
+					flex-direction: column;
+
+					.filter__item{
+						height: 40px;
+						padding: 0 4px;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						gap: 8px;
+						cursor: pointer;
+						.filter__icon__wrapper{
+							width: 20px;
+							height: 20px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+						.filter__item__selected__wrapper{
+							width: 16px;
+							height: 16px;
+						}
+					}
+
+					.filters__separator{
+						background-color: var(--separator-color);
+						outline: none;
+						border: none;
+						height: 1px;
+						min-width: 100%;
+					}
+					.filters__clear__button{
+						height: 40px;
+						padding: 0 0 0 28px;
+						display: flex;
+						align-items: center;
+						cursor: pointer;
+					}
+
+					.dropdown__hover{
+						&:hover{
+							background-color: var(--primary-hover-bg);
+						}
+					}
+				}
+			}
+
+
+			.filters__sort__wrapper{
+				.filters__sort__button{
+					height: 40px;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 8px;
+					cursor: pointer;
+					&__inactive{
+						&:hover{
+							background-color: var(--primary-hover-bg);
+						}
+					}
+					&__active{
+						background-color: var(--primary-active);
+					}
+				}
+				.filters__sort__content__item{
+					height: 40px;
+					padding: 0 4px;
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					cursor: pointer;
+					.sort__item__selected__wrapper{
+						width: 16px;
+						height: 16px;
+					}
+					&:hover{
+						background-color: var(--primary-hover-bg);
+					}
+				}
+				.filters__sort__content__wrapper{
+					position: absolute;
+					min-width: 160px;
+					background-color: var(--dropdown-bg);
+					box-shadow: var(--dropdown-box-shadow);
+					border-radius: 12px;
+					z-index: 20;
+					top: 175px;
+					right: 100%;
+					.filters__sort__content{
+						padding: 8px 0;
+					}
+				}
+			}
+		}
+	}
+
+
+}
+
+
+
+
+
+.filter__checked__icon{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #3C82FD;
+}

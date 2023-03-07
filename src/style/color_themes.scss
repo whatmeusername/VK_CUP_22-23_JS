@@ -1,0 +1,103 @@
+
+.app{
+    &.theme__color__sidebar__light{
+        --header-text: #FFFFFF;
+        --header-hover-primary: #FFFFFF14;
+        
+        --sidebar-text-color: #E7E8EA;
+        --sidebar-selected-text-color: #FFFFFF;
+        --sidebar-text-secondary-color: #FFFFFF;
+        --sidebar-hover-bg: #ffffff20;
+        --sidebar-item-selected: #FFFFFF3D;
+    
+        --setting-sidebar-selected: #00103D14;
+        --setting-sidebar-hover: #00103D0A;
+    
+        --icon-filter-side: invert(95%) sepia(9%) saturate(38%) hue-rotate(182deg) brightness(100%) contrast(120%);
+        --site-header-icon-filter: invert(100%) sepia(100%) brightness(200);
+
+        &.theme__color__brown{
+            background-color: rgb(78, 52, 46);
+            --site-header: rgb(41, 27, 24);
+        }
+        &.theme__color__dark{
+            background-color: rgb(66, 66, 66);
+            --site-header: rgb(36, 36, 36);
+        }
+        &.theme__color__violet{
+            background-color: rgb(90, 53, 90);
+            --site-header: rgb(51, 29, 51);
+        }
+        &.theme__color__darkblue{
+            background-color: rgb(53, 56, 90);
+            --site-header: rgb(23, 25, 40);
+        }
+        &.theme__color__bluepink{
+            background-color: rgb(100, 110, 203);
+            --site-header: rgb(67, 76, 152);
+        }
+        &.theme__color__pink{
+            background-color: rgb(231, 54, 114);
+            --site-header: rgb(179, 28, 79);
+        }
+        &.theme__color__orange{
+            background-color: rgb(244, 67, 54);
+            --site-header: rgb(183, 48, 38);
+        }
+        &.theme__color__green{
+            background-color: rgb(56, 142, 60);
+            --site-header: rgb(39, 102, 42);
+        }
+    }
+
+
+    &.theme__color__sidebar__dark{
+
+        --header-text: #FFFFFF;
+        --site-header-icon-filter: invert(100%) sepia(100%) brightness(2);
+        --header-hover-primary: rgba(0, 16, 61, 0.16);
+
+        &.theme__color__cyan{
+            background-color: rgb(129, 216, 208);
+            --site-header: rgb(60, 146, 138);
+        }
+
+        &.theme__color__gray{
+            background-color: rgb(226, 220, 213);
+            --site-header: rgb(131, 126, 120);
+        }
+
+        &.theme__color__pastel{
+            background-color: rgb(255, 235, 220);
+            --site-header: rgb(140, 132, 126);
+        }
+
+        &.theme__color__pastelgreen{
+            background-color: rgb(231, 238, 210);
+            --site-header: rgb(116, 122, 99);
+        }
+
+        &.theme__color__lightblue{
+            background-color: rgb(208, 240, 247);
+            --site-header: rgb(85, 111, 116);
+        }
+
+        &.theme__color__lightpink{
+            background-color: rgb(201, 208, 251);
+            --site-header: rgb(90, 94, 118);
+        }
+
+        &.theme__color__pastellightblue{
+            background-color: rgb(221, 243, 255);
+            --site-header: rgb(83, 95, 107);
+        }
+
+        &.theme__color__white{
+            background-color: rgb(240, 240, 240);
+            --site-header: rgb(128, 128, 128);
+        }
+
+    }
+
+
+}

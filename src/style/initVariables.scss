@@ -1,0 +1,110 @@
+.app{
+
+
+    --min-screen-width-desktop: 675px;
+    --max-screen-width: 1920px;
+
+    --site-header: #FFFFFF;
+    --header-text: #2C2D2E;
+    --header-hover-primary: #00103D0A;
+  
+    --setting-modal-bg: #FFFFFF;
+    --setting-modal-shadow: 0 4px 32px 0 rgba(0, 16, 61, 0.32);
+    --settings-modal-rb-bg: #DADCE0;
+    --setting-sidebar-selected: #00103D14;
+    --setting-sidebar-hover: #00103D0A;
+  
+    --sidebar-text-color: #333333;
+    --sidebar-text-secondary-color: #87898F;
+    --sidebar-selected-text-color: #333333;
+    --sidebar-item-selected: #00103D14;
+    --sidebar-hover-bg: #00103D0A;
+  
+    --text-color-primary: #2C2D2E;
+    --text-color-secondary: #87898F;
+    --text-color-link: #005BD1;
+  
+    --read-icon-unreaded-bg: #005FF9;
+    --read-icon-readed-bg: #A5A7AD;
+  
+    --border-icon-primary: #00103d1f;
+  
+    --primary-hover-bg: #00103D0A;
+    --primary-active: #00103D14;
+    --separator-color: rgba(0, 16, 61, 0.12);
+  
+  
+    --letter-bottom-color: #00103D1F;
+    --letter-hover-bg: rgb(240, 240, 242);
+    --letter-active-bg: rgb(235, 236, 239);
+  
+  
+    --letter-list-background: #FFFFFF;
+    --letter-list--scrollbar-bg: rgb(180, 180, 180, 0.4);
+  
+  
+    --letter-attachment-active-background: #00103D14;
+    --letter-attachment-hover-background: #00103d0b;
+    --dropdown-box-shadow: 0px 4px 32px 0 #00103d29;
+    --dropdown-bg: #FFFFFF;
+  
+    --letter-attachment-dropdown-box-shadow: 0px 4px 32px 0 #00103d29;
+    --letter-download-bg: linear-gradient(0deg, rgba(236, 237, 240, 0.95) 56.81%, rgba(236, 237, 240, 0) 104.46%);
+  
+  
+    --checkbox-custom-bg: #FFFFFF;
+    --checkbox-custom-border: 1px solid rgba(0, 16, 61, 0.12);
+
+
+    --radio-custom-not-checked-border: 1px solid #0000001F;
+    --radio-custom-checked-bg: #005FF9;
+    --radio-custom-checked-border: 1px solid rgba(0, 0, 0, 0.12);
+    --radio-custom-checked-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.04);
+    --radio-custom-checked-dot-bg: #FFFFFF;
+
+
+
+    --modal__dimmer__bg: rgb(77, 77, 77, 0.2);
+    
+    --write-letter-control-hover: rgb(220,220,220, 0.5);
+    --receiver__card__bg: rgb(230, 230, 230);
+    --wl__attachment__hover: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 56.81%, rgba(240, 240, 240, 0.75) 104.46%);
+    --wl__attachment__bg: rgba(240, 240, 240, 0.5);
+    --wl__dnd__bg: rgb(255, 255, 255, 0.75);
+
+    --btn__bg__primary: rgb(240, 240, 240);
+    --btn__bg__accent: #005FF9;
+
+  
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+  
+    .sb__selected{
+        background-color: var(--sidebar-item-selected);
+      }
+    
+      .text__link{
+        color: var(--text-color-link);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    
+      .text__primary{
+        color: var(--text-color-primary)
+      }
+    
+      .text__secondary{
+        color: var(--text-color-secondary)
+      }
+    
+      .icon__primary{
+        filter: var(--icon-filter-primary);
+      }
+  
+}
